@@ -23,7 +23,7 @@ Module.register('MMM-Traffic', {
         changeColor: false,
         limitYellow: 10,
         limitRed: 30,
-        showGreen: true,
+        showBlue: true,
         language: config.language,
         show_summary: true
     },
@@ -86,8 +86,8 @@ Module.register('MMM-Traffic', {
               commuteInfo.className += ' red';
             } else if (this.trafficComparison >= 1 + (this.config.limitYellow / 100)) {
               commuteInfo.className += ' yellow';
-            } else if (this.config.showGreen) {
-              commuteInfo.className += ' green';
+            } else if (this.config.showBlue) {
+              commuteInfo.className += ' Blue';
             }
           }
           wrapper.appendChild(commuteInfo);
